@@ -1,0 +1,566 @@
+2017-02-24 16:12:40 ERROR  : ERROR:  una cadena de caracteres entre comillas está inconclusa en o cerca de «'13DTV0035P)
+»
+LINE 1: ...as.cat_usuarios where id_usuario in ('13DTV0690C','13DTV0035...
+                                                             ^
+2017-02-28 10:57:38 ERROR  : ERROR:  no existe la relación «infraestructura.cat_usuario»
+LINE 2:   FROM infraestructura.cat_usuario limit 5
+               ^
+2017-02-28 10:57:49 ERROR  : ERROR:  no existe la relación «infraestructura.cat_usuario»
+LINE 2:   FROM infraestructura.cat_usuario
+               ^
+2017-02-28 12:27:30 ERROR  : ERROR:  error de sintaxis en o cerca de «user»
+LINE 1: create table user (
+                     ^
+2017-02-28 13:26:36 ERROR  : ERROR:  error de sintaxis en o cerca de «auto_increment»
+LINE 2:  id int not null auto_increment primary key,
+                         ^
+2017-02-28 13:26:49 ERROR  : ERROR:  no existe el esquema «clinica»
+LINE 1: create TABLE clinica.user (
+                     ^
+2017-02-28 13:27:25 ERROR  : ERROR:  no existe el esquema «clinica»
+LINE 1: CREATE TABLE clinica.user (
+                     ^
+2017-02-28 13:27:57 ERROR  : ERROR:  no existe el tipo «datetime»
+LINE 10:  created_at datetime
+                     ^
+2017-02-28 13:28:42 ERROR  : ERROR:  la columna «is_active» es de tipo boolean pero la expresión default es de tipo integer
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo.
+2017-02-28 13:29:18 ERROR  : ERROR:  la columna «is_active» es de tipo boolean pero la expresión default es de tipo character varying
+HINT:  Necesitará reescribir la expresión o aplicarle una conversión de tipo.
+2017-02-28 13:30:50 ERROR  : ERROR:  error de sintaxis en o cerca de «user»
+LINE 1: insert into user (username,password,is_admin,is_active,creat...
+                    ^
+2017-02-28 13:31:06 ERROR  : ERROR:  error de sintaxis en o cerca de «value»
+LINE 1: ...(username,password,is_admin,is_active,created_at) value ("ad...
+                                                             ^
+2017-02-28 13:31:15 ERROR  : ERROR:  no existe la columna «admin»
+LINE 1: ...e,password,is_admin,is_active,created_at) values ("admin",sh...
+                                                             ^
+2017-02-28 13:31:35 ERROR  : ERROR:  no existe la función sha1(text)
+LINE 1: ...rd,is_admin,is_active,created_at) values ('admin',sha1(md5('...
+                                                             ^
+HINT:  Ninguna función coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+2017-02-28 13:31:54 ERROR  : ERROR:  el valor null para la columna «id» viola la restricción not null
+DETAIL:  La fila que falla contiene (null, admin, null, null, null, 21232f297a57a5a743894a0e4a801fc3, 1, 1, 2017-02-28 13:28:20.742669).
+2017-02-28 13:32:23 ERROR  : ERROR:  INSERT tiene más expresiones que columnas de destino
+LINE 1: ...ctive,created_at) values (1,'admin',md5('admin'),1,1,NOW());
+                                                                ^
+2017-02-28 13:32:44 ERROR  : ERROR:  el valor null para la columna «id» viola la restricción not null
+DETAIL:  La fila que falla contiene (null, admin, null, null, null, 21232f297a57a5a743894a0e4a801fc3, 1, 1, 2017-02-28 13:29:10.545964).
+2017-02-28 13:33:05 ERROR  : ERROR:  el valor null para la columna «name» viola la restricción not null
+DETAIL:  La fila que falla contiene (1, admin, null, null, null, 21232f297a57a5a743894a0e4a801fc3, 1, 1, 2017-02-28 13:29:31.319887).
+2017-02-28 13:33:49 ERROR  : ERROR:  el valor null para la columna «lastname» viola la restricción not null
+DETAIL:  La fila que falla contiene (1, admin, gilberto, null, null, 21232f297a57a5a743894a0e4a801fc3, 1, 1, 2017-02-28 13:30:16.083247).
+2017-02-28 13:34:17 ERROR  : ERROR:  el valor null para la columna «email» viola la restricción not null
+DETAIL:  La fila que falla contiene (1, admin, gilberto, contreras, null, 21232f297a57a5a743894a0e4a801fc3, 1, 1, 2017-02-28 13:30:43.728654).
+2017-02-28 13:34:49 ERROR  : ERROR:  error de sintaxis en o cerca de «TABLE»
+LINE 1: CREATE or REPLACE TABLE public.user (
+                          ^
+2017-02-28 13:35:19 ERROR  : ERROR:  error de sintaxis en o cerca de «(»
+LINE 1: ALTER TABLE public.user (
+                                ^
+2017-02-28 13:40:20 ERROR  : ERROR:  error de sintaxis en o cerca de «user»
+LINE 1: drop table public user
+                          ^
+2017-02-28 13:44:58 ERROR  : ERROR:  no existe la columna «Modulo 1»
+LINE 1: insert into category values (1,"Modulo 1");
+                                       ^
+2017-02-28 13:49:34 ERROR  : ERROR:  error de sintaxis en o cerca de «user»
+LINE 21:  foreign key (user_id) references user(id),
+                                           ^
+2017-02-28 13:53:45 ERROR  : ERROR:  error de sintaxis en o cerca de «,»
+LINE 20:  CONSTRAINT fk_status foreign key (id),
+                                               ^
+2017-02-28 13:57:11 ERROR  : ERROR:  error de sintaxis en o cerca de «,»
+LINE 20:  CONSTRAINT fk_status foreign key (status_id),
+                                                      ^
+2017-02-28 13:57:33 ERROR  : ERROR:  error de sintaxis en o cerca de «,»
+LINE 20:  CONSTRAINT fk_status_id foreign key (id),
+                                                  ^
+2017-03-07 13:30:54 ERROR  : ERROR:  error de sintaxis en o cerca de «CASE»
+LINE 1:   CASE WHEN public.f_asignado_empleado_ct(id_empleado::bigin...
+          ^
+2017-03-07 13:31:13 ERROR  : ERROR:  no existe la columna «turno»
+LINE 6: ...c.f_empleado_cct('13DJN1588G'::character varying,#turno#::sm...
+                                                             ^
+2017-03-09 10:30:12 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2017-03-09 11:35:19 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2017-03-14 13:52:13 ERROR  : ERROR:  no existe la función coun(character varying)
+LINE 1: SELECT coun("CLAVECCT")
+               ^
+HINT:  Ninguna función coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+2017-03-14 14:01:31 ERROR  : ERROR:  inserción o actualización en la tabla «cat_cct» viola la llave foránea «fk_at_cct_reference_cat_sr»
+DETAIL:  La llave (cvesr)=(0) no está presente en la tabla «cat_sr».
+CONTEXT:  sentencia SQL: «update cat_cct
+set
+claveturno = a_ctba."TURNO"::smallint,
+cvesr = substring(a_ctba."SERREG",3,1)::smallint,
+ctfol = substring(a_ctba."FOLIO",1,10),
+ctnombre = a_ctba."NOMBRECT",
+ctdomicilio = a_ctba."DOMICILIO",
+ctcol = a_ctba."COLONIA",
+ctentre_calle = a_ctba."ENTRECALLE",
+ct_y_calle = a_ctba."YCALLE",
+n_loc = a_ctba."LOCALIDAD",
+n_mun = a_ctba."MUNICIPIO",
+ctcp = a_ctba."CODPOST",
+ctfax = a_ctba."FAX1",
+--cttel = a_ctba."TELEFONO1",
+sector = a_ctba."SECTOR",
+zona = a_ctba."ZONAESCOLA",
+ctnuminc = a_ctba."NUMINCORPO",
+ctfecinc = a_ctba."FECHAINCOR"::timestamp without time zone,
+ctfecalta = a_ctba."FECHAALTA"::timestamp without time zone,
+--email = a_ctba."CORREOELE",
+pweb = a_ctba."PAGINAWEB",
+status = a_ctba."STATUS"::smallint
+--fmod = a_ctba."FECHAACTUA"::timestamp without time zone,
+from a_ctba
+where cat_cct.id_cct = a_ctba."CLAVECCT"»
+función PL/pgSQL sp_actualiza_cat_cct() en la línea 7 en sentencia SQL
+2017-03-14 14:03:33 ERROR  : ERROR:  inserción o actualización en la tabla «cat_cct» viola la llave foránea «fk_at_cct_reference_cat_sr»
+DETAIL:  La llave (cvesr)=(0) no está presente en la tabla «cat_sr».
+CONTEXT:  sentencia SQL: «update cat_cct
+set
+claveturno = a_ctba."TURNO"::smallint,
+cvesr = substring(a_ctba."SERREG",3,1)::smallint,
+ctfol = substring(a_ctba."FOLIO",1,10),
+ctnombre = a_ctba."NOMBRECT",
+ctdomicilio = a_ctba."DOMICILIO",
+ctcol = a_ctba."COLONIA",
+ctentre_calle = a_ctba."ENTRECALLE",
+ct_y_calle = a_ctba."YCALLE",
+n_loc = a_ctba."LOCALIDAD",
+n_mun = a_ctba."MUNICIPIO",
+ctcp = a_ctba."CODPOST",
+ctfax = a_ctba."FAX1",
+--cttel = a_ctba."TELEFONO1",
+sector = a_ctba."SECTOR",
+zona = a_ctba."ZONAESCOLA",
+ctnuminc = a_ctba."NUMINCORPO",
+ctfecinc = a_ctba."FECHAINCOR"::timestamp without time zone,
+ctfecalta = a_ctba."FECHAALTA"::timestamp without time zone,
+--email = a_ctba."CORREOELE",
+pweb = a_ctba."PAGINAWEB",
+status = a_ctba."STATUS"::smallint
+--fmod = a_ctba."FECHAACTUA"::timestamp without time zone,
+from a_ctba
+where cat_cct.id_cct = a_ctba."CLAVECCT"»
+función PL/pgSQL sp_actualiza_cat_cct() en la línea 7 en sentencia SQL
+2017-03-14 14:08:02 ERROR  : ERROR:  inserción o actualización en la tabla «cat_cct» viola la llave foránea «fk_at_cct_reference_cat_sr»
+DETAIL:  La llave (cvesr)=(0) no está presente en la tabla «cat_sr».
+CONTEXT:  sentencia SQL: «update cat_cct
+set
+claveturno = a_ctba."TURNO"::smallint,
+cvesr = substring(a_ctba."SERREG",2,1)::smallint,
+ctfol = substring(a_ctba."FOLIO",1,10),
+ctnombre = a_ctba."NOMBRECT",
+ctdomicilio = a_ctba."DOMICILIO",
+ctcol = a_ctba."COLONIA",
+ctentre_calle = a_ctba."ENTRECALLE",
+ct_y_calle = a_ctba."YCALLE",
+n_loc = a_ctba."LOCALIDAD",
+n_mun = a_ctba."MUNICIPIO",
+ctcp = a_ctba."CODPOST",
+ctfax = a_ctba."FAX1",
+--cttel = a_ctba."TELEFONO1",
+sector = a_ctba."SECTOR",
+zona = a_ctba."ZONAESCOLA",
+ctnuminc = a_ctba."NUMINCORPO",
+ctfecinc = a_ctba."FECHAINCOR"::timestamp without time zone,
+ctfecalta = a_ctba."FECHAALTA"::timestamp without time zone,
+--email = a_ctba."CORREOELE",
+pweb = a_ctba."PAGINAWEB",
+status = a_ctba."STATUS"::smallint
+--fmod = a_ctba."FECHAACTUA"::timestamp without time zone,
+from a_ctba
+where cat_cct.id_cct = a_ctba."CLAVECCT"»
+función PL/pgSQL sp_actualiza_cat_cct() en la línea 7 en sentencia SQL
+2017-03-14 14:13:48 ERROR  : ERROR:  inserción o actualización en la tabla «cat_cct» viola la llave foránea «fk_at_cct_reference_cat_sr»
+DETAIL:  La llave (cvesr)=(0) no está presente en la tabla «cat_sr».
+CONTEXT:  sentencia SQL: «update cat_cct
+set
+claveturno = a_ctba."TURNO"::smallint,
+cvesr = substring(a_ctba."SERREG",3,1)::smallint,
+ctfol = substring(a_ctba."FOLIO",1,10),
+ctnombre = a_ctba."NOMBRECT",
+ctdomicilio = a_ctba."DOMICILIO",
+ctcol = a_ctba."COLONIA",
+ctentre_calle = a_ctba."ENTRECALLE",
+ct_y_calle = a_ctba."YCALLE",
+n_loc = a_ctba."LOCALIDAD",
+n_mun = a_ctba."MUNICIPIO",
+ctcp = a_ctba."CODPOST",
+ctfax = a_ctba."FAX1",
+--cttel = a_ctba."TELEFONO1",
+sector = a_ctba."SECTOR",
+zona = a_ctba."ZONAESCOLA",
+ctnuminc = a_ctba."NUMINCORPO",
+ctfecinc = a_ctba."FECHAINCOR"::timestamp without time zone,
+ctfecalta = a_ctba."FECHAALTA"::timestamp without time zone,
+--email = a_ctba."CORREOELE",
+pweb = a_ctba."PAGINAWEB",
+status = a_ctba."STATUS"::smallint
+--fmod = a_ctba."FECHAACTUA"::timestamp without time zone,
+from a_ctba
+where cat_cct.id_cct = a_ctba."CLAVECCT"»
+función PL/pgSQL sp_actualiza_cat_cct() en la línea 7 en sentencia SQL
+2017-03-14 14:16:59 ERROR  : ERROR:  inserción o actualización en la tabla «cat_cct» viola la llave foránea «fk_at_cct_reference_cat_sr»
+DETAIL:  La llave (cvesr)=(0) no está presente en la tabla «cat_sr».
+CONTEXT:  sentencia SQL: «update cat_cct
+set
+claveturno = a_ctba."TURNO"::smallint,
+cvesr = substring(a_ctba."SERREG",3,1)::smallint,
+ctfol = substring(a_ctba."FOLIO",1,10),
+ctnombre = a_ctba."NOMBRECT",
+ctdomicilio = a_ctba."DOMICILIO",
+ctcol = a_ctba."COLONIA",
+ctentre_calle = a_ctba."ENTRECALLE",
+ct_y_calle = a_ctba."YCALLE",
+n_loc = a_ctba."LOCALIDAD",
+n_mun = a_ctba."MUNICIPIO",
+ctcp = a_ctba."CODPOST",
+ctfax = a_ctba."FAX1",
+--cttel = a_ctba."TELEFONO1",
+sector = a_ctba."SECTOR",
+zona = a_ctba."ZONAESCOLA",
+ctnuminc = a_ctba."NUMINCORPO",
+ctfecinc = a_ctba."FECHAINCOR"::timestamp without time zone,
+ctfecalta = a_ctba."FECHAALTA"::timestamp without time zone,
+--email = a_ctba."CORREOELE",
+pweb = a_ctba."PAGINAWEB",
+status = a_ctba."STATUS"::smallint
+--fmod = a_ctba."FECHAACTUA"::timestamp without time zone,
+from a_ctba
+where cat_cct.id_cct = a_ctba."CLAVECCT"»
+función PL/pgSQL sp_actualiza_cat_cct() en la línea 7 en sentencia SQL
+2017-03-14 14:19:32 ERROR  : ERROR:  inserción o actualización en la tabla «cat_cct» viola la llave foránea «fk_at_cct_reference_cat_sr»
+DETAIL:  La llave (cvesr)=(0) no está presente en la tabla «cat_sr».
+CONTEXT:  sentencia SQL: «update cat_cct
+set
+claveturno = a_ctba."TURNO"::smallint,
+cvesr = substring(a_ctba."SERREG",3,1)::smallint,
+ctfol = substring(a_ctba."FOLIO",1,10),
+ctnombre = a_ctba."NOMBRECT",
+ctdomicilio = a_ctba."DOMICILIO",
+ctcol = a_ctba."COLONIA",
+ctentre_calle = a_ctba."ENTRECALLE",
+ct_y_calle = a_ctba."YCALLE",
+n_loc = a_ctba."LOCALIDAD",
+n_mun = a_ctba."MUNICIPIO",
+ctcp = a_ctba."CODPOST",
+ctfax = a_ctba."FAX1",
+--cttel = a_ctba."TELEFONO1",
+sector = a_ctba."SECTOR",
+zona = a_ctba."ZONAESCOLA",
+ctnuminc = a_ctba."NUMINCORPO",
+ctfecinc = a_ctba."FECHAINCOR"::timestamp without time zone,
+ctfecalta = a_ctba."FECHAALTA"::timestamp without time zone,
+--email = a_ctba."CORREOELE",
+pweb = a_ctba."PAGINAWEB",
+status = a_ctba."STATUS"::smallint
+--fmod = a_ctba."FECHAACTUA"::timestamp without time zone,
+from a_ctba
+where cat_cct.id_cct = a_ctba."CLAVECCT"»
+función PL/pgSQL sp_actualiza_cat_cct() en la línea 7 en sentencia SQL
+2017-03-14 14:19:34 ERROR  : ERROR:  inserción o actualización en la tabla «cat_cct» viola la llave foránea «fk_at_cct_reference_cat_sr»
+DETAIL:  La llave (cvesr)=(0) no está presente en la tabla «cat_sr».
+CONTEXT:  sentencia SQL: «update cat_cct
+set
+claveturno = a_ctba."TURNO"::smallint,
+cvesr = substring(a_ctba."SERREG",3,1)::smallint,
+ctfol = substring(a_ctba."FOLIO",1,10),
+ctnombre = a_ctba."NOMBRECT",
+ctdomicilio = a_ctba."DOMICILIO",
+ctcol = a_ctba."COLONIA",
+ctentre_calle = a_ctba."ENTRECALLE",
+ct_y_calle = a_ctba."YCALLE",
+n_loc = a_ctba."LOCALIDAD",
+n_mun = a_ctba."MUNICIPIO",
+ctcp = a_ctba."CODPOST",
+ctfax = a_ctba."FAX1",
+--cttel = a_ctba."TELEFONO1",
+sector = a_ctba."SECTOR",
+zona = a_ctba."ZONAESCOLA",
+ctnuminc = a_ctba."NUMINCORPO",
+ctfecinc = a_ctba."FECHAINCOR"::timestamp without time zone,
+ctfecalta = a_ctba."FECHAALTA"::timestamp without time zone,
+--email = a_ctba."CORREOELE",
+pweb = a_ctba."PAGINAWEB",
+status = a_ctba."STATUS"::smallint
+--fmod = a_ctba."FECHAACTUA"::timestamp without time zone,
+from a_ctba
+where cat_cct.id_cct = a_ctba."CLAVECCT"»
+función PL/pgSQL sp_actualiza_cat_cct() en la línea 7 en sentencia SQL
+2017-03-14 14:19:35 ERROR  : ERROR:  inserción o actualización en la tabla «cat_cct» viola la llave foránea «fk_at_cct_reference_cat_sr»
+DETAIL:  La llave (cvesr)=(0) no está presente en la tabla «cat_sr».
+CONTEXT:  sentencia SQL: «update cat_cct
+set
+claveturno = a_ctba."TURNO"::smallint,
+cvesr = substring(a_ctba."SERREG",3,1)::smallint,
+ctfol = substring(a_ctba."FOLIO",1,10),
+ctnombre = a_ctba."NOMBRECT",
+ctdomicilio = a_ctba."DOMICILIO",
+ctcol = a_ctba."COLONIA",
+ctentre_calle = a_ctba."ENTRECALLE",
+ct_y_calle = a_ctba."YCALLE",
+n_loc = a_ctba."LOCALIDAD",
+n_mun = a_ctba."MUNICIPIO",
+ctcp = a_ctba."CODPOST",
+ctfax = a_ctba."FAX1",
+--cttel = a_ctba."TELEFONO1",
+sector = a_ctba."SECTOR",
+zona = a_ctba."ZONAESCOLA",
+ctnuminc = a_ctba."NUMINCORPO",
+ctfecinc = a_ctba."FECHAINCOR"::timestamp without time zone,
+ctfecalta = a_ctba."FECHAALTA"::timestamp without time zone,
+--email = a_ctba."CORREOELE",
+pweb = a_ctba."PAGINAWEB",
+status = a_ctba."STATUS"::smallint
+--fmod = a_ctba."FECHAACTUA"::timestamp without time zone,
+from a_ctba
+where cat_cct.id_cct = a_ctba."CLAVECCT"»
+función PL/pgSQL sp_actualiza_cat_cct() en la línea 7 en sentencia SQL
+2017-03-14 14:21:15 ERROR  : ERROR:  inserción o actualización en la tabla «cat_cct» viola la llave foránea «fk_at_cct_reference_cat_sr»
+DETAIL:  La llave (cvesr)=(0) no está presente en la tabla «cat_sr».
+CONTEXT:  sentencia SQL: «update cat_cct
+set
+claveturno = a_ctba."TURNO"::smallint,
+cvesr = substring(a_ctba."SERREG",3,1)::smallint,
+ctfol = substring(a_ctba."FOLIO",1,10),
+ctnombre = a_ctba."NOMBRECT",
+ctdomicilio = a_ctba."DOMICILIO",
+ctcol = a_ctba."COLONIA",
+ctentre_calle = a_ctba."ENTRECALLE",
+ct_y_calle = a_ctba."YCALLE",
+n_loc = a_ctba."LOCALIDAD",
+n_mun = a_ctba."MUNICIPIO",
+ctcp = a_ctba."CODPOST",
+ctfax = a_ctba."FAX1",
+--cttel = a_ctba."TELEFONO1",
+sector = a_ctba."SECTOR",
+zona = a_ctba."ZONAESCOLA",
+ctnuminc = a_ctba."NUMINCORPO",
+ctfecinc = a_ctba."FECHAINCOR"::timestamp without time zone,
+ctfecalta = a_ctba."FECHAALTA"::timestamp without time zone,
+--email = a_ctba."CORREOELE",
+pweb = a_ctba."PAGINAWEB",
+status = a_ctba."STATUS"::smallint
+--fmod = a_ctba."FECHAACTUA"::timestamp without time zone,
+from a_ctba
+where cat_cct.id_cct = a_ctba."CLAVECCT" and substring(a_ctba."SERREG",2,1) != '10'»
+función PL/pgSQL sp_actualiza_cat_cct() en la línea 7 en sentencia SQL
+2017-03-14 14:22:33 ERROR  : ERROR:  inserción o actualización en la tabla «cat_cct» viola la llave foránea «fk_at_cct_reference_cat_sr»
+DETAIL:  La llave (cvesr)=(0) no está presente en la tabla «cat_sr».
+CONTEXT:  sentencia SQL: «update cat_cct
+set
+claveturno = a_ctba."TURNO"::smallint,
+cvesr = substring(a_ctba."SERREG",3,1)::smallint,
+ctfol = substring(a_ctba."FOLIO",1,10),
+ctnombre = a_ctba."NOMBRECT",
+ctdomicilio = a_ctba."DOMICILIO",
+ctcol = a_ctba."COLONIA",
+ctentre_calle = a_ctba."ENTRECALLE",
+ct_y_calle = a_ctba."YCALLE",
+n_loc = a_ctba."LOCALIDAD",
+n_mun = a_ctba."MUNICIPIO",
+ctcp = a_ctba."CODPOST",
+ctfax = a_ctba."FAX1",
+--cttel = a_ctba."TELEFONO1",
+sector = a_ctba."SECTOR",
+zona = a_ctba."ZONAESCOLA",
+ctnuminc = a_ctba."NUMINCORPO",
+ctfecinc = a_ctba."FECHAINCOR"::timestamp without time zone,
+ctfecalta = a_ctba."FECHAALTA"::timestamp without time zone,
+--email = a_ctba."CORREOELE",
+pweb = a_ctba."PAGINAWEB",
+status = a_ctba."STATUS"::smallint
+--fmod = a_ctba."FECHAACTUA"::timestamp without time zone,
+from a_ctba
+where cat_cct.id_cct = a_ctba."CLAVECCT" and substring(a_ctba."SERREG",2,1) != '10'»
+función PL/pgSQL sp_actualiza_cat_cct() en la línea 7 en sentencia SQL
+2017-03-14 14:23:00 ERROR  : ERROR:  inserción o actualización en la tabla «cat_cct» viola la llave foránea «fk_at_cct_reference_cat_sr»
+DETAIL:  La llave (cvesr)=(0) no está presente en la tabla «cat_sr».
+CONTEXT:  sentencia SQL: «update cat_cct
+set
+claveturno = a_ctba."TURNO"::smallint,
+cvesr = substring(a_ctba."SERREG",3,1)::smallint,
+ctfol = substring(a_ctba."FOLIO",1,10),
+ctnombre = a_ctba."NOMBRECT",
+ctdomicilio = a_ctba."DOMICILIO",
+ctcol = a_ctba."COLONIA",
+ctentre_calle = a_ctba."ENTRECALLE",
+ct_y_calle = a_ctba."YCALLE",
+n_loc = a_ctba."LOCALIDAD",
+n_mun = a_ctba."MUNICIPIO",
+ctcp = a_ctba."CODPOST",
+ctfax = a_ctba."FAX1",
+--cttel = a_ctba."TELEFONO1",
+sector = a_ctba."SECTOR",
+zona = a_ctba."ZONAESCOLA",
+ctnuminc = a_ctba."NUMINCORPO",
+ctfecinc = a_ctba."FECHAINCOR"::timestamp without time zone,
+ctfecalta = a_ctba."FECHAALTA"::timestamp without time zone,
+--email = a_ctba."CORREOELE",
+pweb = a_ctba."PAGINAWEB",
+status = a_ctba."STATUS"::smallint
+--fmod = a_ctba."FECHAACTUA"::timestamp without time zone,
+from a_ctba
+where cat_cct.id_cct = a_ctba."CLAVECCT" and substring(a_ctba."SERREG",2,1) != '0'»
+función PL/pgSQL sp_actualiza_cat_cct() en la línea 7 en sentencia SQL
+2017-03-14 14:48:36 ERROR  : ERROR:  error de sintaxis en o cerca de «_nuevo»
+LINE 16: _nuevo:=0;
+         ^
+2017-03-14 14:49:08 ERROR  : ERROR:  error de sintaxis en o cerca de «_inum»
+LINE 17: _inum:=0;
+         ^
+2017-03-14 14:49:54 ERROR  : ERROR:  error de sintaxis en o cerca de «OPEN»
+LINE 19: OPEN cur01;
+         ^
+2017-03-14 14:50:07 ERROR  : ERROR:  falta una entrada para la tabla «a» en la cláusula FROM
+LINE 2:       select a."CLAVECCT",a."TURNO" from a_ctba
+                     ^
+2017-03-14 14:50:41 ERROR  : ERROR:  error de sintaxis en o cerca de «OPEN»
+LINE 19: OPEN cur01;
+         ^
+2017-03-14 14:51:55 ERROR  : ERROR:  error de sintaxis en o cerca de «OPEN»
+LINE 19:  OPEN cur01;
+          ^
+2017-03-14 14:52:32 ERROR  : ERROR:  la orden DECLARE CURSOR sólo puede ser usada en bloques de transacción
+2017-03-14 14:52:47 ERROR  : ERROR:  error de sintaxis en o cerca de «OPEN»
+LINE 25:  OPEN cur01;
+          ^
+2017-03-14 14:54:29 ERROR  : ERROR:  error de sintaxis en o cerca de «OPEN»
+LINE 17:  OPEN cur01;
+          ^
+2017-03-14 14:54:44 ERROR  : ERROR:  error de sintaxis en o cerca de «cur01»
+LINE 18:  fetch cur01 into _idcct,_turno;
+                ^
+2017-03-14 14:57:24 ERROR  : ERROR:  error de sintaxis en o cerca de «fromqry_ctba_a_cat_cct»
+LINE 1: select * fromqry_ctba_a_cat_cct
+                 ^
+2017-03-14 14:57:33 ERROR  : ERROR:  la sintaxis de entrada no es válida para tipo timestamp: «1969»
+2017-03-14 15:33:38 ERROR  : ERROR:  error de sintaxis en o cerca de «OPEN»
+LINE 17:  OPEN cur01;
+          ^
+2017-03-14 15:34:13 ERROR  : ERROR:  error de sintaxis en o cerca de «OPEN»
+LINE 17:  OPEN cur01;
+          ^
+2017-03-16 15:17:10 ERROR  : ERROR:  error de sintaxis en o cerca de «13»
+LINE 5: 13DCC0952S
+        ^
+2017-03-16 15:38:01 ERROR  : ERROR:  error de sintaxis en o cerca de «where»
+LINE 2:   FROM public.cat_cct limit 1 where id_cct in ('13DCC0952S',
+                                      ^
+2017-03-16 15:57:36 ERROR  : ERROR:  error de sintaxis en o cerca de «public»
+LINE 1: public.random_facil(8)
+        ^
+2017-03-16 16:00:12 ERROR  : ERROR:  error de sintaxis en o cerca de «value»
+LINE 1: insert into infraestructura.cat_usuarios value ('13DCC0952S'...
+                                                 ^
+2017-03-16 16:00:22 ERROR  : ERROR:  error de sintaxis en o cerca de «variying»
+LINE 1: ...13DCC0952S','S',public.random_facil(8)::character variying,"...
+                                                             ^
+2017-03-16 16:00:39 ERROR  : ERROR:  no existe la columna «ESCUELA DE EDUCACION PREESCOLAR INDIGENA»
+LINE 1: ...s values ('13DCC0952S','S',public.random_facil(8),"ESCUELA D...
+                                                             ^
+2017-03-16 16:06:21 ERROR  : ERROR:  error de sintaxis en o cerca de «insert»
+LINE 2: insert into infraestructura.cat_usuarios values ('13DES0125B...
+        ^
+2017-03-22 16:59:02 ERROR  : ERROR:  la base de datos «clinica» está siendo utilizada por otros usuarios
+DETAIL:  Hay 1 otra sesión usando la base de datos.
+2017-03-22 16:59:19 ERROR  : ERROR:  la base de datos «clinica» está siendo utilizada por otros usuarios
+DETAIL:  Hay 1 otra sesión usando la base de datos.
+2017-03-22 17:00:09 ERROR  : ERROR:  la base de datos «clinica» está siendo utilizada por otros usuarios
+DETAIL:  Hay 1 otra sesión usando la base de datos.
+2017-03-24 10:25:15 ERROR  : ERROR:  error de sintaxis en o cerca de «CASE»
+LINE 1:   CASE WHEN public.f_asignado_empleado_ct(id_empleado::bigin...
+          ^
+2017-03-24 10:30:08 ERROR  : ERROR:  error de sintaxis en o cerca de «selec»
+LINE 1: selec * from t_empleados_asignacion limit 10
+        ^
+2017-03-24 10:41:48 ERROR  : ERROR:  no existe la columna «id_empleado»
+LINE 8:   FROM plantillas.empleados where id_empleado = 39877
+                                          ^
+HINT:  Perhaps you meant to reference the column "empleados.idempleado".
+2017-03-27 12:08:05 ERROR  : ERROR:  error de sintaxis en o cerca de «CASE»
+LINE 1:   CASE WHEN public.f_asignado_empleado_ct(id_empleado::bigin...
+          ^
+2017-03-27 12:12:01 ERROR  : ERROR:  no existe la columna «rfc»
+LINE 1: SELECT    rfc,plaza,funcion_nombramiento,funcion,substring(o...
+                  ^
+2017-03-27 12:12:41 ERROR  : ERROR:  error de sintaxis en o cerca de «where»
+LINE 2:   FROM      plantillas.empleados_pz limit  where idempleado ...
+                                                   ^
+2017-03-27 12:12:51 ERROR  : ERROR:  el operador no existe: character varying = integer
+LINE 2:   FROM      plantillas.empleados_pz  where idempleado = 3579
+                                                              ^
+HINT:  Ningún operador coincide con el nombre y el tipo de los argumentos. Puede ser necesario agregar conversiones explícitas de tipos.
+2017-03-27 12:16:40 ERROR  : ERROR:  no existe la relación «plantillas.empleados_i»
+LINE 2:   FROM      plantillas.empleados_i  where idempleado = '3579...
+                    ^
+2017-03-27 12:17:02 ERROR  : ERROR:  no existe la relación «empleados_i»
+LINE 2:   FROM empleados_i  where idempleado = '3579'
+               ^
+2017-03-27 12:17:18 ERROR  : ERROR:  no existe la columna «idempleado»
+LINE 2:   FROM t_empleados_i  where idempleado = '3579'
+                                    ^
+HINT:  Perhaps you meant to reference the column "t_empleados_i.id_empleado".
+2017-04-06 12:56:29 ERROR  : ERROR:  error de sintaxis en o cerca de «7»
+LINE 1: SELECT * FROM plantillas.empleados LIMIN 7
+                                                 ^
+2017-04-06 13:05:50 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:11:37 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:12:07 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:12:08 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:12:09 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:12:09 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:12:11 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:12:11 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:12:12 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:12:12 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:12:12 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:12:13 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:12:13 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:12:13 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:12:14 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:12:14 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:12:14 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:12:15 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:12:15 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:12:15 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:13:15 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-06 13:13:17 ERROR  : ERROR:  el valor es demasiado largo para el tipo character varying(25)
+CONTEXT:  función PL/pgSQL sp_obtiene_pmn(bigint) en la línea 47 en asignación
+2017-04-07 10:12:29 ERROR  : ERROR:  no existe la relación «templeados_i»
+LINE 1: select * from templeados_i limit 5
+                      ^
+2017-04-26 12:34:36 ERROR  : ERROR:  error de sintaxis en o cerca de «where»
+LINE 1: select * from t_empleados_i limit where nombre_empleado like...
+                                          ^
+2017-05-02 09:52:08 ERROR  : ERROR:  no existe el tipo «id_usuario»
+LINE 1: ...ario,clavefree from plantillas.cat_usuarios where id_usuario...
+                                                             ^
